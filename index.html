@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sir mwas best pizza</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#order">Menu</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Sir Mwas pizza cafe</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+             <li><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">contacts</a></li>
+          </ul>
+        </div>
+      </nav>  -->
+
+
+    <div class="container">
+        <div id="home">
+
+            <br><br><br><br><br>
+            <h1>Sir mwas pizza cafe</h1>
+
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/american.jpeg"  alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/italian.jpeg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./images/spanish.jpeg"  alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+            <h2>About us</h2>
+            <p>Sir Mwas pizza cafe is located in Juja along Kenyatta avenue.We have six types of different pizzas that
+                we offer,<br> where each pizza has three sizes.Which includes:small size, medium size and large size.
+            </p>
+            <p>Our customers are able to choose the size of pizza, kind of crust pizza contain, topping(s) they want.
+            </p>
+            <p>Our customers can place orders and have option to select pizza delivered or not.</p>
+        </div>
+        <div id="order">
+            <br><br>
+            <h2>Types of pizza that we have in our restaurant:</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>American pizza</h3>
+
+                    <img src="images/american.jpeg" height="250px" width="250px" id="p1">
+                    <p id="port1" class="port">American pizza</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>British pizza</h3>
+                    <img src="images/british.jpeg" height="250px" width="250px" id="p2">
+                    <p id="port2" class="port">British pizza</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Spanish pizza</h3>
+                    <p id="port3" class="port">Spanish pizza</p>
+
+                    <img src="images/spanish.jpeg" height="250px" width="250px" id="p3">
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Italian pizza</h3>
+
+                    <img src="images/italian.jpeg" height="250px" width="250px" id="p4">
+                    <p id="port4" class="port">Italian pizza</p>
+
+                </div>
+                <div class="col-md-4">
+                    <h3> Dutch pizza</h3>
+                    <img src="images/dutch.jpeg" height="250px" width="250px" id="p5">
+                    <p id="port5" class="port">Dutch pizza</p>
+
+                </div>
+                <div class="col-md-4">
+                    <h3>Congolese pizza</h3>
+
+                    <img src="images/congolese.jpeg" height="250px" width="250px" id="p6">
+                    <p id="port7" class="port">Congolese pizza</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mx-auto py-2">
+                        <form id="form">
+
+                            <h2>Select and place your order</h2>
+
+                            <div class="form-group">
+                                <label for="sel1">Select the type of pizza you want:</label>
+                                <select class="form-control" id="type">
+                                    <option>American pizza</option>
+                                    <option>British pizza</option>
+                                    <option>Spanish pizza</option>
+                                    <option>Italian pizza</option>
+                                    <option>Dutch pizza</option>
+                                    <option>Congolese pizza</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sel1">Select the size of your pizza:</label>
+                                <select class="form-control" id="size">
+                                    <option value="1">Large @ ksh 1200</option>
+                                    <option value="2">Medium @ ksh 950</option>
+                                    <option value="3">Small @ ksh750</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sel1">Choose your favorite crust:</label>
+                                <select class="form-control" id="crust">
+                                    <option>Cripsy</option>
+                                    <option>Stuffed</option>
+                                    <option>Gluten-free</option>
+
+
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sel1">Choose your favorite topping:</label>
+                                <select class="form-control" id="top">
+                                    <option>sweet onion</option>
+                                    <option>pizza sause</option>
+                                    <option>red pepper</option>
+                                    <option>basil</option>
+                                    <option>black olives</option>
+                                    <option>white onions</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group" required>
+                                <label for="sel1">Number of pizza:</label>
+                                <input type="number" id="num" class="form-control" min="1" required>
+                            </div>
+                            <div class="form-group" required="">
+                                <label for="sel1">option for delivery:</label>
+                                <select class="form-control" id="take">
+                                    <option value="1">pick from our cafe</option>
+                                    <option value="2">pizza delivered @ ksh 300</option>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+
+                                <button type="submit" class="btn btn-primary checkout" id="checkout">Place an
+                                    Order</button>
+
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container-fluid">
+                <h2>Contact us through.</h2>
+                <form>
+                    <label>User Name</label><br>
+                    <input name="name" type="text" placeholder="user name" id="name" required><br><br>
+                    <label>User Email</label><br>
+                    <input name="Email" type="text" placeholder="Email address" required>
+                    <div>
+                        <textarea name="message" placeholder="Your message here..." id="" cols="100"
+                            rows="10"></textarea><br>
+                        <button type="submit" onclick="userName()" class="btn btn-primary">Submit text</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
