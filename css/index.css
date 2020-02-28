@@ -1,0 +1,99 @@
+nav{
+    text-align: right;
+    background-color: palegreen;
+    font-weight: 800;                   
+    font-size: x-large;
+    font-style: normal;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+
+}
+nav li{
+display:inline-block;
+margin-left: 30px;
+padding-bottom: 30px;
+padding-top: 30px;
+padding-right: 30px;
+}
+nav a:hover{
+    color:red;
+}
+h2,h3,h4,h5{
+    text-align: center;
+}
+#home{
+    text-align: center;
+    font-weight: bold;
+}
+
+#p1:hover {
+    position: relative;
+    /* background-color: white; */
+    opacity: 0.6;
+}
+#p2:hover {
+  position: relative;
+  /* background-color: white; */
+  opacity: 0.6;
+}
+#p3:hover {
+  position: relative;
+  /* background-color: white; */
+  opacity: 0.6;
+}
+#p4:hover {
+  position: relative;
+  /* background-color: white; */
+  opacity: 0.6;
+}
+#p5:hover {
+  position: relative;
+  /* background-color: white; */
+  opacity: 0.6;
+}
+#p6:hover {
+  position: relative;
+  /* background-color: white; */
+  opacity: 0.6;
+}
+.port{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    display: none;
+    text-align: center;
+    margin-left: 50%;
+    /* background-color: white; */
+    border: 5px;
+    color: red;
+    font-size: 20px;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    /* overflow-x: visible; */
+  
+}
+
+
+
+
+#contact{
+    text-align: center;
+    font-weight: bold;
+}
+
+input{
+    width:250px ;
+    opacity: 0.5;
+    background: transparent;
+}
+textarea{
+    background: transparent;
+}
+/* caurosel */
+.carousel-inner .item img{
+    min-height : 300px;
+    max-height : 700px;
+    width : 100%;
+  }
