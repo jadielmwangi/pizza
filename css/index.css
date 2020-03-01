@@ -81,8 +81,9 @@ padding-right: 30px;
 nav a:hover{
     color:red;
 }
-h2,h3,h4,h5{
+h1,h2,h3,h4,h5{
     text-align: center;
+    color: whitesmoke;
 }
 #home{
     text-align: center;
