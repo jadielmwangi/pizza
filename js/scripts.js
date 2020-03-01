@@ -4,10 +4,35 @@
 //     cycle: true
 //   }); 
 
+// business logic
+function Mypizza(type, size, crusts, tops) {
+  this.type = type;
+  this.size = size;
+  this.crusts = crusts;
+  this.tops =tops;
+};
 
+Mypizza.prototype.fullMypizza = function() {
+  return this.type +", the size of pizza is" + this.size + " Outermost layer is a crust of " + this.crusts + "and topping of" + this.tops + ".";
+};
+
+
+function Cost(price, number, pick){
+  this.price = price;
+  this.number = number;
+  this.pick = pick;
+
+};
+
+Cost.prototype.totalCost = function () {
+return this.price * this.number + this.pick;
+};
+
+var pizzaPrices = [1200, 950, 750];
+var deliveryPrice =  [0, 300]; 
    
       
-
+// contact message function
 function userName(submit){
     event.preventDefault();
       var name = $("input#name").val();
