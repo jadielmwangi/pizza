@@ -47,17 +47,20 @@ function userName(submit){
 $(document).ready(function () {
   $("form#myForm").submit(function (event) {
       event.preventDefault();
-      var pizzaType = $("#type").val();
+      var typeOfPizza = $("#type").val();
 
-      var pizzaSize = parseInt($("#size").val());
+      var sizeOfPizza = parseInt($("#size").val());
 
-      var pizzaCrust = $("#crust").val();
+      var crustOfPizza = $("#crust").val();
 
-      var pizzaTop = $("#topping").val();
+      var topOfPizza = $("#topping").val();
 
-      var pizzaQty = parseInt($("#num").val());
+      var numberOfPizza = parseInt($("#num").val());
 
-      var pizzaPick = parseInt($("#mode").val());
+      var pizzaDelivery = parseInt($("#mode").val());
+
+// var eachPrice =
+// var costDelivery=
 
   });
 });
