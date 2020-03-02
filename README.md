@@ -1,14 +1,14 @@
 ## Project name
 Pizza
-This Repository contains pizza cafe.
+This Repository contains pizza .
 ## Project Author
 Jadiel Mwangi
 ## Project Description 
-* Pizza is a page that provides a plantform where buyers can order  and recieve their pizza. also it have contacts part and a footer at the bottom of the page.
+* Pizza is a page that provides a plantform where buyers can order  and recieve their pizza instantly. also it have contacts part and a footer at the bottom of the page.
 
 ## Setup Instructions
-* git clone https://github.com/jadielmwangi/best-pizza on your terminal.
-* Navigate to the portfolio folder through cd Documents/Delani-studio.
+* git clone https://github.com/jadielmwangi/pizza on your terminal.
+* Navigate to the portfolio folder through cd Documents/best-pizza.
 * Open the folder in your favourite editor,for vscode,is code . and for atom, atom .
 * Open the index.html in your browser
 
@@ -25,10 +25,10 @@ Jadiel Mwangi
 * https:
 
 ## Behaviour Driven Development (BDD)
-* The web page will require the user to fill in his/her name and enter email address.On submit an alert message will pop up and alerts the user that their message has been received.
+* The web page will require the user to use a form to choose the type of pizza, size of pizza, crust and topping of the pizza. Also the custom will choose whether to pick pizza from cafe or be delivered. On submit an alert message will pop up and alerts the user the total cost of pizza and where the place he/she will pick pizza.
 
 ## Known bags
-* Most of socio media icons do not work but we are working in it.
+* Most of sociol media icons do not work but we are working in it.
 ## Contact Details
 * Email:jedielmwangi@gmail.com
 * Phone No: 0727 867 684
