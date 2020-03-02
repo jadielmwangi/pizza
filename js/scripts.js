@@ -1,9 +1,4 @@
 
-// $('#myCarousel').carousel({
-//     interval:3000,
-//     cycle: true
-//   }); 
-
 // contact message function
 function userName(submit) {
   event.preventDefault();
@@ -22,8 +17,8 @@ function Mypizza(type, size, crust, tops) {
   this.tops = tops;
 };
 
-Mypizza.prototype.fullMypizza = function () {
-  return this.type + " Outermost layer is a crust of " + this.crust + "and topping of" + this.tops + ".";
+Mypizza.prototype.firstMypizza = function () {
+  return this.type + " Outermost layer is a crust of " + this.crust  + " and topping of..";
 };
 
 
@@ -34,13 +29,13 @@ function Cost(price, number, pick) {
 
 };
 
-Cost.prototype.finalCost = function () {
+Cost.prototype.firstCost = function () {
   return this.price * this.number + this.pick;
 };
 
 var pizzaPrices = [1200, 950, 750];
-var deliveryCost = [0, 300];
-
+var deliveryCost = [300, 0];
+var toppingCost = [80,60,50];
 
 
 
@@ -62,20 +57,20 @@ $(document).ready(function () {
 
     var pizzaDelivery = parseInt($("#mode").val());
 
-    var finalPrice = pizzaPrices[sizeOfPizza];
+    var finalPrice = pizzaPrices[sizeOfPizza] + toppingCost[topOfPizza];
     var finalDelivery = deliveryCost[pizzaDelivery];
 
-    var newMypizza = new Mypizza(typeOfPizza, sizeOfPizza, crustOfPizza, topOfPizza);
-    var newTotal = new Cost(numberOfPizza, finalPrice, finalDelivery);
-     console.log(pizzaDelivery);
+    var mypizza2 = new Mypizza(typeOfPizza, sizeOfPizza, crustOfPizza, topOfPizza);
+    var total2 = new Cost(finalPrice, numberOfPizza, finalDelivery);
+    //  console.log(pizzaDelivery);
     if (pizzaDelivery === 0) {
-      alert("Thanks for placing an order which is" + newMypizza.fullMypizza() + ". And total cost is" + newTotal.finalCost());
-
+      prompt("Enter the place where Your pizza will be delivered.");
+      alert("Thanks for placing an order which is " + mypizza2.firstMypizza() + ". And total cost of your pizza is ksh " + total2.firstCost());
+ 
     }
     else if (pizzaDelivery === 1) {
-      prompt("Enter the place where Your pizza will be delivered.");
 
-      alert("Thanks for placing order which is " + newMypizza.fullMypizza() + ". And total cost is" + newTotal.finalCost());
+      alert("Thanks for placing order which is " + mypizza2.firstMypizza() + ". And total cost of your pizza is ksh " + total2.firstCost());
 
     }
 
