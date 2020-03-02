@@ -4,6 +4,16 @@
 //     cycle: true
 //   }); 
 
+// contact message function
+function userName(submit){
+  event.preventDefault();
+    var name = $("input#name").val();
+    var email =$("input#email").val();
+   alert("Hi " + name + " ,thank for contacting us we have recieved your message .");
+
+};
+
+
 // business logic
 function Mypizza(type, size, crusts, tops) {
   this.type = type;
@@ -12,7 +22,7 @@ function Mypizza(type, size, crusts, tops) {
   this.tops =tops;
 };
 
-Mypizza.prototype.fullMypizza = function() {
+Mypizza.prototype.finalMypizza = function() {
   return this.type +", the size of pizza is" + this.size + " Outermost layer is a crust of " + this.crusts + "and topping of" + this.tops + ".";
 };
 
@@ -29,17 +39,10 @@ return this.price * this.number + this.pick;
 };
 
 var pizzaPrices = [1200, 950, 750];
-var deliveryPrice =  [0, 300]; 
+var deliveryCost =  [0, 300]; 
    
       
-// contact message function
-function userName(submit){
-    event.preventDefault();
-      var name = $("input#name").val();
-      var email =$("input#email").val();
-     alert("Hi " + name + " ,thank for contacting us we have recieved your message .");
-  
-};
+
 
 
 //user interface logic
@@ -59,8 +62,21 @@ $(document).ready(function () {
 
       var pizzaDelivery = parseInt($("#mode").val());
 
-// var eachPrice =
-// var costDelivery=
+      var finalPrice = pizzaPrices[sizeOfPizza];
+      var finalDelivery = deliveryCost[pizzaDelivery];
+ var mypizza1 = new  Mypizza(typeOfPizza, sizeOfPizza, crustOfPizza, topOfPizza);
+var total1 = new Cost(numberOfPizza, finalPrice,finalDelivery);
 
-  });
+if (pizzaDelivery === 0){
+  alert("Thanks for placing order which is" + mypizza1.finalMypizza() + ". And total cost is" + total1.totalCost());
+  
+  } 
+  else if(pizzaDelivery === 1){
+    prompt("Enter the place where Your pizza will be delivered.");
+    
+    alert("Thanks for placing order which is "  + mypizza1.finalMypizza() + ". And total cost is" + total1.totalCost());
+    
+}
+
+});
 });
