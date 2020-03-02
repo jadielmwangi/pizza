@@ -32,7 +32,7 @@
   }
   
   .text {
-    background-color: greenyellow;
+    background-color: palegreen;
     color: white;
     
     padding: 16px 32px;
@@ -94,33 +94,27 @@ h1,h2,h3,h4,h5{
 
 #p1:hover {
     position: relative;
-    /* background-color: white; */
-    opacity: 0.6;
+    opacity: 0.7;
 }
 #p2:hover {
   position: relative;
-  /* background-color: white; */
-  opacity: 0.6;
+  opacity: 0.7;
 }
 #p3:hover {
   position: relative;
-  /* background-color: white; */
-  opacity: 0.6;
+  opacity: 0.7;
 }
 #p4:hover {
   position: relative;
-  /* background-color: white; */
-  opacity: 0.6;
+  opacity: 0.7;
 }
 #p5:hover {
   position: relative;
-  /* background-color: white; */
-  opacity: 0.6;
+  opacity: 0.7;
 }
 #p6:hover {
   position: relative;
-  /* background-color: white; */
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 
