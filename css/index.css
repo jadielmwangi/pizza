@@ -2,7 +2,13 @@
     overflow-x: hidden;
 }
 
-  
+  body{
+    background-image: url("/images/back4.jpeg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .image {
     opacity: 1;
     display: block;
@@ -32,7 +38,7 @@
   }
   
   .text {
-    background-color: palegreen;
+    background-color: skyblue;
     color: white;
     
     padding: 16px 32px;
@@ -62,7 +68,7 @@ body{
 
 nav{
     text-align: right;
-    background-color: palegreen;
+    background-color: aliceblue;
     font-weight: 800;                   
     font-size: x-large;
     font-style: normal;
@@ -73,10 +79,9 @@ nav{
 }
 nav li{
 display:inline-block;
-margin-left: 30px;
+margin-left: 20px;
 padding-bottom: 20px;
 padding-top: 20px;
-padding-right: 30px;
 }
 nav a:hover{
     color:red;
@@ -94,31 +99,35 @@ h1,h2,h3,h4,h5{
 
 #p1:hover {
     position: relative;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 #p2:hover {
   position: relative;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 #p3:hover {
   position: relative;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 #p4:hover {
   position: relative;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 #p5:hover {
   position: relative;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 #p6:hover {
   position: relative;
-  opacity: 0.7;
+  opacity: 0.8;
 }
+footer{
+  text-align: center;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   body {
-      background-color: gray;
+      background-color: rgb(138, 127, 127);
       color: white;
   }
 }
