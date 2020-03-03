@@ -4,7 +4,7 @@ This Repository contains pizza .
 ## Project Author
 Jadiel Mwangi
 ## Project Description 
-* Pizza is a page that provides a plantform where buyers can order  and recieve their pizza instantly. also it have contacts part and a footer at the bottom of the page.
+* Pizza is a page that provides a platform where customers  can place a pizza order  and recieve their pizza instantly. also it have contacts part and a footer at the bottom of the page.
 
 ## Setup Instructions
 * git clone https://github.com/jadielmwangi/pizza on your terminal.
@@ -22,10 +22,10 @@ Jadiel Mwangi
 
 ## Live link
 * Click to get my Github link:
-* https:
+* https:https://jadielmwangi.github.io/pizza/
 
 ## Behaviour Driven Development (BDD)
-* The web page will require the user to use a form to choose the type of pizza, size of pizza, crust and topping of the pizza. Also the custom will choose whether to pick pizza from cafe or be delivered. On submit an alert message will pop up and alerts the user the total cost of pizza and where the place he/she will pick pizza.
+* The web page will require the user to use a form to choose the type of pizza, size of pizza, crust and topping of the pizza. Also the custom will choose whether to pick pizza from cafe or be delivered. On submit an alert message will pop up and alerts the user the checkout of his/her pizza and total cost of pizza, also where he/she will pick their ordered pizza.
 
 ## Known bags
 * Most of sociol media icons do not work but we are working in it.
