@@ -1,5 +1,5 @@
 
-// contact message function
+// contact function
 function userName(submit) {
   event.preventDefault();
   var name = $("input#name").val();
@@ -18,7 +18,7 @@ function Mypizza(type, size, crust, tops) {
 };
 
 Mypizza.prototype.firstMypizza = function () {
-  return this.type + " Outermost layer is a crust of " + this.crust  + " and topping of..";
+  return this.type + " . Outermost layer is a crust of " + this.crust  + " and topping of..";
 };
 
 
