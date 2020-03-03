@@ -88,182 +88,179 @@
             </p>
 
         </div>
-        <div>
-            <hr>
-            <div id="menu">
-                <h2>Welcome to types of pizza that we have in our restaurant:</h2>
-                <div class="container">
-                    <div class=row>
-                        <div class="col-md-4">
-                            <h5>American chicken pizza</h5>
+    </div>
+    <hr>
+    <div id="menu">
+        <h2>Welcome to types of pizza that we have in our restaurant:</h2>
+        <div class="container">
+            <div class=row>
+                <div class="col-md-4">
+                    <h5>American chicken pizza</h5>
 
-                            <img src="images/american.jpeg" height="350px" width="350px" id="p1">
+                    <img src="images/american.jpeg" height="350px" width="350px" id="p1">
 
-                        </div>
-                        <div class="col-md-4">
-                            <h5>British beef pizza</h5>
-                            <img src="images/british.jpeg" height="350px" width="350px" id="p2">
+                </div>
+                <div class="col-md-4">
+                    <h5>British beef pizza</h5>
+                    <img src="images/british.jpeg" height="350px" width="350px" id="p2">
 
-                        </div>
+                </div>
 
 
-                        <div class="col-md-4">
-                            <h5>Spanish matton pizza</h5>
+                <div class="col-md-4">
+                    <h5>Spanish matton pizza</h5>
 
-                            <img src="images/spanish1.jpeg" height="350px" width="350px" id="p3">
+                    <img src="images/spanish1.jpeg" height="350px" width="350px" id="p3">
 
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Italian daily pizza</h5>
+
+                    <img src="images/italian.jpeg" height="350px" width="350px" id="p4">
+
+
+                </div>
+
+                <div class="col-md-4">
+                    <h5> Dutch chicken pizza</h5>
+                    <img src="images/dutch.jpeg" height="350px" width="350px" id="p5">
+
+
+                </div>
+                <div class="col-md-4">
+                    <h5>Congolese beef pizza</h5>
+
+                    <img src="images/congolese.jpeg" height="350px" width="350px" id="p6">
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+        <div id="order">
+            <div class="container">
+                <div class="card card-body bg-secondary">
                     <div class="row">
-                        <div class="col-md-4">
-                            <h5>Italian daily pizza</h5>
+                        <div class="col-md-6 mx-auto py-2">
+                            <form id="pizzaform">
 
-                            <img src="images/italian.jpeg" height="350px" width="350px" id="p4">
+                                <h2>Select pizza and place your order</h2>
 
-
-                        </div>
-
-                        <div class="col-md-4">
-                            <h5> Dutch chicken pizza</h5>
-                            <img src="images/dutch.jpeg" height="350px" width="350px" id="p5">
-
-
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Congolese beef pizza</h5>
-
-                            <img src="images/congolese.jpeg" height="350px" width="350px" id="p6">
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-                <hr>
-                <div id="order">
-                    <div class="container">
-                        <div class="card card-body bg-secondary">
-                        <div class="row">
-                            <div class="col-md-6 mx-auto py-2">
-                                <form id="pizzaform">
-
-                                    <h2>Select pizza and place your order</h2>
-
-                                    <div class="form-group">
-                                        <label>Select the type of pizza you want:</label>
-                                        <select class="form-control" id="type">
-                                            <option>American chicken pizza</option>
-                                            <option>British beef pizza</option>
-                                            <option>Spanish matton pizza</option>
-                                            <option>Italian daily pizza</option>
-                                            <option>Dutch chicken pizza</option>
-                                            <option>Congolese beef pizza</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Select the size of your pizza:</label>
-                                        <select class="form-control" id="size">
-                                            <option value="0">Large @ ksh 1200</option>
-                                            <option value="1">Medium @ ksh 950</option>
-                                            <option value="2">Small @ ksh750</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Choose your favorite crust:</label>
-                                        <select class="form-control" id="crust">
-                                            <option value="0">Cripsy @ ksh 50</option>
-                                            <option value="1">Stuffed @ ksh 50</option>
-                                            <option value="2">Gluten-free ksh 50</option>
-
-
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Choose your favorite topping:</label>
-                                        <select class="form-control" id="topping">       
-                                            <option value ="0">red pepper @ ksh 80</option>
-                                            <option value="1">black olives @ ksh 60</option>
-                                            <option value="2">white onions @ ksh 50</option>
-
-                                        </select>
-                                    </div>
-                                    <div class="form-group" required>
-                                        <label>Number of pizza:</label>
-                                        <input type="number" id = "num" class="form-control" min="1" required>
-                                    </div>
-                                    <div class="form-group" required>
-                                        <label>option for delivery:</label>
-                                        <select class="form-control" id="mode">
-                                            <option value="0">pizza delivered @ ksh 300</option>
-                                            <option value="1">pick from our cafe</option>
-
-
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-
-                                        <button type="submit" class="btn btn-primary checkout" id="checkout">Place an
-                                            Order</button>
-
-                                    </div>
-
-
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <hr>
-                <div id="contact">
-                    <div class="container">
-                        <div class="col-md-12 ">
-                            <div class="card card-body bg-secondary">
-
-                                <h2>Contact us through.</h2>
-                                <div>
-                                    <form id="contactform">
-                                        <label>User Name</label><br>
-                                        <input name="name" type="text" placeholder="user name" id="name"
-                                            required><br><br>
-                                        <label>User Email</label><br>
-                                        <input name="Email" type="text" placeholder="Email address" id="email" required>
-                                        <div>
-                                            <textarea name="message" placeholder="Your message here..." id="" cols="100"
-                                                rows="5"></textarea><br>
-                                            <button type="submit" onclick="userName()" class="btn btn-primary">Submit
-                                                text</button>
-
-                                        </div>
-                                    </form>
+                                <div class="form-group">
+                                    <label>Select the type of pizza you want:</label>
+                                    <select class="form-control" id="type">
+                                        <option>American chicken pizza</option>
+                                        <option>British beef pizza</option>
+                                        <option>Spanish matton pizza</option>
+                                        <option>Italian daily pizza</option>
+                                        <option>Dutch chicken pizza</option>
+                                        <option>Congolese beef pizza</option>
+                                    </select>
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <label>Select the size of your pizza:</label>
+                                    <select class="form-control" id="size">
+                                        <option value="0">Large @ ksh 1200</option>
+                                        <option value="1">Medium @ ksh 950</option>
+                                        <option value="2">Small @ ksh750</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Choose your favorite crust:</label>
+                                    <select class="form-control" id="crust">
+                                        <option value="0">Cripsy @ ksh 50</option>
+                                        <option value="1">Stuffed @ ksh 50</option>
+                                        <option value="2">Gluten-free ksh 50</option>
+
+
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Choose your favorite topping:</label>
+                                    <select class="form-control" id="topping">
+                                        <option value="0">red pepper @ ksh 80</option>
+                                        <option value="1">black olives @ ksh 60</option>
+                                        <option value="2">white onions @ ksh 50</option>
+
+                                    </select>
+                                </div>
+                                <div class="form-group" required>
+                                    <label>Number of pizza:</label>
+                                    <input type="number" id="num" class="form-control" min="1" required>
+                                </div>
+                                <div class="form-group" required>
+                                    <label>option for delivery:</label>
+                                    <select class="form-control" id="mode">
+                                        <option value="0">pizza delivered @ ksh 300</option>
+                                        <option value="1">pick from our cafe</option>
+
+
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <button type="submit" class="btn btn-primary checkout" id="checkout">Place an
+                                        Order</button>
+
+                                </div>
+
+
+                            </form>
+
                         </div>
                     </div>
                 </div>
-                <div class="container bot">
-                    <footer>
-                        <img src="images/facebook.png" alt="facebook icon">
-                        <img src="images/twitter.png" alt="twitter icon">
-                        <img src="images/twitter.png" alt="twitter icon">
-                        <img src="images//g_plus.png" alt="g plus icon">
-                        <img src="images/skype.png" alt="skype icon">
+            </div>
+        </div>
+        <hr>
+        <div id="contact">
+            <div class="container">
+                <div class="col-md-12 ">
+                    <div class="card card-body bg-secondary">
 
+                        <h2>Contact us through.</h2>
+                        <div>
+                            <form id="contactform">
+                                <label>User Name</label><br>
+                                <input name="name" type="text" placeholder="user name" id="name" required><br><br>
+                                <label>User Email</label><br>
+                                <input name="Email" type="text" placeholder="Email address" id="email" required>
+                                <div>
+                                    <textarea name="message" placeholder="Your message here..." id="" cols="100"
+                                        rows="5"></textarea><br>
+                                    <button type="submit" onclick="userName()" class="btn btn-primary">Submit
+                                        text</button>
 
-                        <h6>@ 2020 sir mwas pizza cafe</h6>
-                    </footer>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="container bot">
+            <hr>
+            <footer>
+                <img src="images/facebook.png" alt="facebook icon">
+                <img src="images/twitter.png" alt="twitter icon">
+                <img src="images/twitter.png" alt="twitter icon">
+                <img src="images//g_plus.png" alt="g plus icon">
+                <img src="images/skype.png" alt="skype icon">
 
-                <script src="js/jquery-3.4.1.js"></script>
 
-                <script src="js/scripts.js"></script>
-                <!-- <script type='text/javascript'
-                    src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                <script
-                    type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script> -->
+                <h6>@ 2020 sir mwas pizza cafe</h6>
+            </footer>
+        </div>
+
+        <script src="js/jquery-3.4.1.js"></script>
+
+        <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
