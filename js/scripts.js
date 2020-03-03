@@ -18,7 +18,7 @@ function Mypizza(type, size, crust, tops) {
 };
 
 Mypizza.prototype.firstMypizza = function () {
-  return this.type + " . Outermost layer is a crust of " + this.crust  + " and topping of..";
+  return this.type + " . Outermost layer is a crust of your choice and topping of your choice";
 };
 
 
@@ -35,6 +35,7 @@ Cost.prototype.firstCost = function () {
 
 var pizzaPrices = [1200, 950, 750];
 var deliveryCost = [300, 0];
+var crustingCost =[50,40,30];
 var toppingCost = [80,60,50];
 
 
@@ -57,7 +58,7 @@ $(document).ready(function () {
 
     var pizzaDelivery = parseInt($("#mode").val());
 
-    var finalPrice = pizzaPrices[sizeOfPizza] + toppingCost[topOfPizza];
+    var finalPrice = pizzaPrices[sizeOfPizza] + toppingCost[topOfPizza] + crustingCost[crustOfPizza] ;
     var finalDelivery = deliveryCost[pizzaDelivery];
 
     var mypizza2 = new Mypizza(typeOfPizza, sizeOfPizza, crustOfPizza, topOfPizza);
